@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "If I do\n \ndoc.Pages.Remove (my_page);\ndoc.Save (path);\ndoc.Pages.Insert (0, my_page);\n \nI get this exception:\n \nSystem.InvalidOperationException: Object already in table.\n  at PdfSharp.Pdf.PdfReferenceTable.Add (PdfSharp.Pdf.PdfObject value) [0x00091] in /home/gabe/Projects/pdfmod/lib/PdfSharp/PdfSharp.Pdf/PdfReferenceTable.cs:97 \n  at PdfSharp.Pdf.PdfPages.Insert (Int32 index, PdfSharp.Pdf.PdfPage page) [0x00058] in /home/gabe/Projects/pdfmod/lib/PdfSharp/PdfSharp.Pdf/PdfPages.cs:141",
+    "LastUpdatedDate": "2013-02-21T17:12:08.163-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2009-08-12T10:21:48.683-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "\"Object already in table\" exception when inserting previously-removed page",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 8465
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I'd seen this initially on version 1.2.0, but I just confirmed it's still an issue with the latest from subversion.",
+      "PostedDate": "2009-08-12T11:04:42.787-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:12:08.163-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "PDFsharp 1.50 beta 2 (available on NuGet) can handle IREF streams.\n\nSource code of PDFsharp 1.50 is still under development/review and was not published yet.",
+    "ClosedDate": "2015-10-15T04:45:33.863-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "PDFsharp is unable to load http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf\n \nCannot handle iref streams. The current implementation of PDFsharp cannot handle this PDF feature introduced with Acrobat 6. (in `PdfSharp')\n  at PdfSharp.Pdf.IO.Parser.ReadXRefTableAndTrailer (PdfSharp.Pdf.PdfReferenceTable xrefTable) [0x00000] \n  at PdfSharp.Pdf.IO.Parser.ReadTrailer () [0x00000] \n  at PdfSharp.Pdf.IO.PdfReader.Open (System.IO.Stream stream, System.String password, PdfDocumentOpenMode openmode, PdfSharp.Pdf.IO.PdfPasswordProvider passwordProvider) [0x00000] \n  at PdfSharp.Pdf.IO.PdfReader.Open (System.String path, System.String password, PdfDocumentOpenMode openmode, PdfSharp.Pdf.IO.PdfPasswordProvider provider) [0x00000] \n  at PdfSharp.Pdf.IO.PdfReader.Open (System.String path, PdfDocumentOpenMode openmode, PdfSharp.Pdf.IO.PdfPasswordProvider provider) [0x00000]",
+    "LastUpdatedDate": "2015-10-15T04:45:34.61-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2009-08-12T10:42:17.137-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "Cannot handle iref streams",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 24,
+    "Id": 8466
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yes, I know, this is the most wanted feature. We will fix (at least reading) iref streams as soon as possible.\r\n\r\nSee also: http://www.pdfsharp.net/wiki/IRef_Streams.ashx",
+      "PostedDate": "2009-08-12T11:36:25.753-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I have Acrobat 9.0 installed in my computer, the workaround suggested is to save it in Acrobat 5.0.\r\nHow to save the pdf doc from Ac 9.0 to 5.0? Please help..!",
+      "PostedDate": "2009-09-13T23:37:50.81-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "In Acrobat Professional 8 you can use Advanced -> PDF Optimizer.",
+      "PostedDate": "2009-09-23T05:59:28.027-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-10-19T09:10:04.973-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "any news?",
+      "PostedDate": "2010-02-04T03:37:44.703-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-02-17T11:16:06.163-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "The last comment from Stefan Lang was on Aug12, 2009.\r\nAny update on this issue? when is iref stream(atleast reading) is going to be supported? Is there any other way to handle those PDFs?\r\nI can use PDF_optimize from Acrobat as there are some features that arent supported by older versions of PDFs. How to handle those PDFs using PDFsharp?",
+      "PostedDate": "2010-03-30T02:51:11.103-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "The last comment from Stefan Lang was on Aug12, 2009.\r\nAny update on this issue? when is iref stream(atleast reading) is going to be supported? Is there any other way to handle those PDFs?\r\nI can use PDF_optimize from Acrobat as there are some features that arent supported by older versions of PDFs. How to handle those PDFs using PDFsharp?",
+      "PostedDate": "2010-03-30T02:51:14.89-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-04-05T06:40:38.39-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-06-15T13:26:54.89-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thanks for sharing this library with us! Any idea when we can expect a solution with this iref stream issue? ",
+      "PostedDate": "2010-06-15T13:54:27.647-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I uploaded a patch for this and it turns out there are problems with stream decoding as well (DecodeParams is ignored). Have not heard back. I'm guessing this project has been abandoned.",
+      "PostedDate": "2010-11-16T15:35:11.94-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I'm hoping it wasn't abandoned, the inability to handle iref streams forced us to make sure the PDF files we have were saved in version 5.0.",
+      "PostedDate": "2010-11-17T05:28:58.193-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2011-03-30T04:41:21.427-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2011-11-15T01:42:44.247-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2011-12-09T07:39:34.85-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-04-12T14:19:28.057-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Love the speed of the PdfSharp library.  Unfortunately cannot use it until it can handle iref streams.  Any ideas on if/when this will get implemented?",
+      "PostedDate": "2012-04-12T14:20:37.18-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-04-18T15:12:23.827-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-05-24T06:33:41.617-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "You can find the work around here:\r\n\r\nhttp://forum.pdfsharp.net/viewtopic.php?f=2&t=693&p=5855#p5855",
+      "PostedDate": "2012-05-29T13:20:03.043-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-07-31T10:51:15.767-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-09-01T17:10:32.417-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-12-12T23:26:49.35-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:12:07.947-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-03-08T00:25:01.453-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-04-02T00:08:29.687-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-24T13:01:43.667-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-09-12T05:15:22.343-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-01-10T04:00:13.91-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-01-17T10:23:28.767-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-04-17T01:12:04.917-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Unfortunately I also fell victim to this restriction on one of my current projects.  Although the workaround might functionally be a viable temporary solution, it requires the use of another PDF manipulation library, PDF sharp, for which you have to pay to use it for commercial purposes - and to add to the confusion, the price of said library is unknown.\r\n\r\nI desperately need to know when you are planning on releasing a patch for this issue, or I will have to consider dropping the PDFSharp library altogether for future projects as well.  That would be a real shame since I really do like the simple interface and the fact that, apart from this issue, \"it just works\". \r\n\r\nI am really concerned that this issue was already the \"most wanted feature\" since 2009 and there has been no movement on it since.  \r\n\r\nSo, I would appreciate a straightforward answer... \n1) Are you planning on fixing this issue / developing this feature?\n2) If yes when can we expect a patch?",
+      "PostedDate": "2014-04-17T01:22:19.37-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "*Sorry, i meant to say __\"it requires the use of another PDF manipulation library, ITextSharp\".__",
+      "PostedDate": "2014-04-17T01:23:25.267-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "bjlewies: Well put. I'm in exactly the same situation as you and I have been for some time. I have resigned to use the dated version of iTextSharp, 4.1.6 ([https://www.nuget.org/packages/iTextSharp-LGPL/4.1.6](http://www.example.com)). That's the latest one that's still under LGPL. It is more difficult to use this library, but once you get going, have done a few conversions with it, it's not too bad.\nFor some things, that iTextSharp 4.1.6 cannot do - like text extraction - I use PDFClown ([http://www.stefanochizzolini.it/en/projects/clown/](http://www.example.com)). It's not the most well chosen name, but it does what it says on the box.\nI hope this helps someone. I'm sorry to say that I feel that PDFSharp is going nowhere fast.",
+      "PostedDate": "2014-04-17T02:50:48.88-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-09-11T20:46:09.857-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-01-22T09:09:47.107-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "February 2015 and still no fix for this. Guess we'll never get a fix for this.\r\n\r\nMind you, the source code is unchanged since 2012, Doesn't bode well for PDFsharp users :(\n",
+      "PostedDate": "2015-02-25T03:08:01.82-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-10-15T04:45:33.863-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-10-15T04:45:34.61-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2016-09-15T06:17:54.94-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "After rotating a PDF to 90 degrees then saving the file the width and height are flipped incorrectly and the image isn't properly rotated.\n\n1. Using the attached file create a test case with the following code.\n\n        public void Rotate_With90DegreeRotation_WillRevertToPortraitAfterSaving()\n        {\n            var originalDocument = PdfReader.Open(\"0_degrees.pdf\");\n            var page = originalDocument.Pages[0];\n            page.Rotate = 90;\n            page.Orientation = PageOrientation.Landscape;\n            originalDocument.Save(\"90_degrees.pdf\");\n            originalDocument.Close();\n            originalDocument.Dispose();\n\n            // read the file again to check orienation\n            var rotatedDocument = PdfReader.Open(\"90_degrees.pdf\");\n            var rotatedPage = rotatedDocument.Pages[0];\n            var rotatedHeight = rotatedPage.Height;\n            var rotatedWidth = rotatedPage.Width;\n            var rotatedOrientation = rotatedPage.Orientation;\n            rotatedDocument.Close();\n            rotatedDocument.Dispose();\n            \n            Assert.IsTrue(rotatedWidth > rotatedHeight); // test fails here\n        }\n\n2. See result of test. \n\nIt appears that the save is doing something with the Media Box dimensions that may be causing this issue. I've implemented a work around in my code to make all 90 and 270 degree rotations set to a \"Portrait\" orientation before saving. This seem to fix the issue, but definitely a HACK.\n\nHere's my work around code:c\n\n                page.Rotate = 90;\n                if (pageToRotate.Rotate == 90)\n                {\n                    // HACK to fix bug with PDF Sharp; setting Orientation will flip the Height and Width, but loading the image again will be incorrect\n                    pageToRotate.Height = originalWidth;\n                    pageToRotate.Width = originalHeight;\n                    // END HACK\n\n                    pageToRotate.Orientation = PageOrientation.Landscape;\n\n                }\n                else\n                {\n                    pageToRotate.Orientation = PageOrientation.Portrait;\n\n                }",
+    "LastUpdatedDate": "2016-09-15T06:18:49.62-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2016-05-10T12:01:45.923-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "Rotate to landscape (90) then save reverses width and height.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 17663
+  },
+  "FileAttachments": [
+    {
+      "FileId": 6159,
+      "FileName": "0_degrees.pdf",
+      "DownloadUrl": ".\\6159"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Fixed in the internal builds using the change documented in the forum:\nhttp://forum.pdfsharp.net/viewtopic.php?p=9591#p9591",
+      "PostedDate": "2016-09-15T06:17:10.003-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2016-09-15T06:17:54.94-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2016-09-15T06:18:49.62-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

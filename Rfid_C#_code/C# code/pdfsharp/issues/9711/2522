@@ -1,0 +1,20 @@
+diff --git a/PDFsharp/code/PdfSharp/PdfSharp.Pdf/PdfDictionary.cs b/PDFsharp/code/PdfSharp/PdfSharp.Pdf/PdfDictionary.cs
+index 77256dd..a781c31 100644
+--- a/PDFsharp/code/PdfSharp/PdfSharp.Pdf/PdfDictionary.cs
++++ b/PDFsharp/code/PdfSharp/PdfSharp.Pdf/PdfDictionary.cs
+@@ -678,7 +678,7 @@ namespace PdfSharp.Pdf
+         if (obj is PdfString)
+           date = ((PdfString)obj).Value;
+         else if (obj is PdfStringObject)
+-          date = ((PdfNameObject)obj).Value;
++          date = ((PdfStringObject)obj).Value;
+         else
+           throw new InvalidCastException("GetName: Object is not a name.");
+ 
+@@ -1605,4 +1605,4 @@ namespace PdfSharp.Pdf
+       }
+     }
+   }
+-}
+\ No newline at end of file
++}

@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not reproducible.",
+    "ClosedDate": "2016-09-15T06:38:16.007-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "If I deploy in Windows 2012 server, the new version is not working. Can you please get me, why? and do we have any solution?",
+    "LastUpdatedDate": "2016-09-15T06:38:16.007-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2016-01-06T05:29:49.64-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "New version not working with Windows 2012 server",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17589
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Not reproducible.\r\n\r\nMaybe you have to implement IFontResolver or grant additional permissions on the server.",
+      "PostedDate": "2016-09-15T06:37:58.983-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2016-09-15T06:38:16.007-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

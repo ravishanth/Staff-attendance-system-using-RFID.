@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2015-06-10T08:43:20.587-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I reported this over at http://sourceforge.net/tracker/?func=detail&aid=3571115&group_id=150343&atid=777115 but I'm guessing this is the preferred tracker now.\n \nThe code in XSolidBrush's Color attribute reads;\n \nthis.color = value;\n#if GDI\nthis.gdiDirty = this.gdiDirty || this.color != value;\n#endif\n \nSince the test follows the assignment it will never be true. In other words, once the brush has been realized, assignments to Color will not update it.\n \nThe assignment should be moved after the tests (i.e. to the end of the Color setter)\n \nPatch:\n \nIndex: PDFsharp/code/PdfSharp/PdfSharp.Drawing/XSolidBrush.cs\n===================================================================\n--- PDFsharp/code/PdfSharp/PdfSharp.Drawing/XSolidBrush.cs      (revision 95915)\n+++ PDFsharp/code/PdfSharp/PdfSharp.Drawing/XSolidBrush.cs      (working copy)\n@@ -85,7 +85,6 @@\n       {\n         if (this.immutable)\n           throw new ArgumentException(PSSR.CannotChangeImmutableObject(\"XSolidBrush\"));\n-        this.color = value;\n #if GDI\n         this.gdiDirty = this.gdiDirty || this.color != value;\n #endif\n@@ -95,6 +94,7 @@\n #if GDI && WPF\n         this.gdiDirty = this.wpfDirty = true;\n #endif\n+        this.color = value;\n       }\n     }\n     internal XColor color;",
+    "LastUpdatedDate": "2015-06-10T08:43:20.587-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2012-09-29T14:17:34.1-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "XSolidBrush doesn't update brush color when assigned",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15658
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

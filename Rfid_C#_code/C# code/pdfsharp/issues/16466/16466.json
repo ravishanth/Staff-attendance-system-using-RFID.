@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Thanks for the feedback, issue is fixed with current internal builds of PDFsharp 1.50.\n\nAre there other control words besides \"\\~\" that must not be followed by a space?",
+    "ClosedDate": "2015-10-15T05:36:13.087-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I insert NBSP in the paragraph and render it with RtfDocumentRenderer, I get additional space after NBSP, and it is slightly noticeable in the resulting document.\n\nCode sample\n```c#\nDocument d = new Document();\nSection s = d.AddSection();\t\t\t\nParagraph content = s.AddParagraph(\"Before NBSP\");\ncontent.AddCharacter(SymbolName.NonBreakableBlank);\t\t\t\ncontent.AddText(\"after NBSP\");\t\n\n//this results in the following RTF code: Before NBSP\\~ after NBSP\n//while correct code is: Before NBSP\\~after NBSP\n```\n\nThis bug was spotted in version 1.32.4334.0.",
+    "LastUpdatedDate": "2015-10-15T05:36:13.79-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2013-10-21T10:56:05.693-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "RtfFormatter adds an extra space after non-breaking space",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 16466
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

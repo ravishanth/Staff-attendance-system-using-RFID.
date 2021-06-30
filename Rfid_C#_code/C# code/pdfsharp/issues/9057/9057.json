@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I really would love to see a support effort for mono runtime and its really simple by removing the P/Invokes that are used in \"CreateGdiFontImage\" and in \"GetInfos\" methods",
+    "LastUpdatedDate": "2015-04-22T10:24:53.93-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2009-10-27T03:40:24.48-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Support for Mono (removing P/Invokes)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 10,
+    "Id": 9057
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I would really like to see this so decided to take a look at this... has anyone else tried this?  \r\n\r\nIt looks like this section of the code gets a data array of the font from the GDI+ library, and so requires user32.dll.  It seems it might be possible to get around this by:\r\n\r\n1 - Only using built in fonts (I think itextsharp does this).\n2 - Embedding the ttf files in the program and accessing them directly (I think ttf is true type font)\n3-  something else.\r\n\r\nDoes this seem about what might be needed?  Was going to look more but I don't know this code at all so wanted to see if other ideas were out there.",
+      "PostedDate": "2013-07-16T14:40:58.18-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Looks like there is a XPrivateFontCollection class that would be very useful here, but isn't quite implemented yet",
+      "PostedDate": "2013-07-16T19:20:01.9-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-04-11T03:47:10.433-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-12-18T07:32:08.253-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-04-22T10:24:53.93-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

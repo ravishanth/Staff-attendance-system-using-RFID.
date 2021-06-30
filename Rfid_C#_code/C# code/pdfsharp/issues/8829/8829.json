@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Please visit the PDFsharp Support Forum: http://forum.pdfsharp.net/\n \nThis is the place we check most frequently for questions and bug reports.\n \nThe PDFsharp web site is at http://www.pdfsharp.net/",
+    "LastUpdatedDate": "2013-02-21T17:12:07.74-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2009-09-23T06:09:27.873-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "PDFsharp Support Forum: http://forum.pdfsharp.net/",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 8829
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

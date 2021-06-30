@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "There's a 'split pdf into 1 page per pdf' example here:\n\nhttp://www.pdfsharp.com/PDFsharp/index.php?option=com_content&task=view&id=37&Itemid=48\n\nIt worked fine, except it opens the source with PdfDocumentOpenMode.ReadOnly\n\nAt least with PdfSharp 1.32.3057.0 from NuGet, that causes an InvalidOperationException during the outputDocument.AddPage(inputDocument.Pages[idx]) call with \"A PDF document must be opened with PdfDocumentOpenMode.Import to import pages from it.\"\n\nstack trace:\n   at PdfSharp.Pdf.PdfPages.ImportExternalPage(PdfPage importPage)\n   at PdfSharp.Pdf.PdfPages.Insert(Int32 index, PdfPage page)\n   at PdfSharp.Pdf.PdfDocument.AddPage(PdfPage page)\n\nChanging it from PdfDocumentOpenMode.ReadOnly to PdfDocumentOpenMode.Import is all that was needed, just as the exception message states (I love actionable error messages!! Great job there!)",
+    "LastUpdatedDate": "2013-10-12T16:13:27.193-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2013-10-12T16:13:27.193-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "online 'split pdf' example uses wrong PdfDocumentOpenMode",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16455
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

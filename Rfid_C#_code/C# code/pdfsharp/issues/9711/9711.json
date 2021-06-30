@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2015-10-15T05:03:58.547-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "There is an InvalidCastException thrown.  Patch fixing it attached.",
+    "LastUpdatedDate": "2015-10-15T05:03:58.547-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2009-12-15T13:23:20.923-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "InvalidCastException in PdfDictionary.cs",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 9711
+  },
+  "FileAttachments": [
+    {
+      "FileId": 2522,
+      "FileName": "invalid_cast.patch",
+      "DownloadUrl": ".\\2522"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "The fix will be included in the next version.",
+      "PostedDate": "2010-01-11T07:12:44.087-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:12:07.367-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-10-15T05:03:58.547-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

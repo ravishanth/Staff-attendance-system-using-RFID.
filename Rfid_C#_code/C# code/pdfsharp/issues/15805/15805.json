@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "PDFSharp 1.32\n(Bug introduced in 1.31)\nPreviously reported at: http://forum.pdfsharp.net/viewtopic.php?f=3&t=1197\n\nAttempting to iterate a PdfAnnotations instance with a foreach loop results in an InvalidCastException:\n\nUnable to cast object of type 'AnnotationsIterator' to type 'System.Collections.Generic.IEnumerator`1[PdfSharp.Pdf.PdfItem]'\nat PdfSharp.Pdf.Annotations.PdfAnnotations.GetEnumerator()\n\nThe private class AnnotationsIterator implements IEnumerator<PdfAnnotation>, but the GetEnumerator method attempts to cast it to IEnumerator<PdfItem>.\n\nThis would work if you were targeting 4.0, but in 2.0 generic covariance is not available.\n\nTo fix this, the AnnotationsIterator class needs to implement IEnumerator<PdfItem> instead of IEnumerator<PdfAnnotation>. The PdfAnnotations.GetEnumerator method will then work without the cast.",
+    "LastUpdatedDate": "2015-10-15T09:03:43.023-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2012-11-20T12:45:11.713-08:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "InvalidCastException in PdfAnnotations",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15805
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Should be fixed with PDFsharp 1.50 beta 3.",
+      "PostedDate": "2015-10-15T09:03:43.023-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm trying to generate a pdf from html content, where it is working fine with english charecters, but when it comes to Arabic charecters, it is being parsed reversed and disconnected.\n\nI'm using thie line of code \nvar pdfFile= TheArtOfDev.HtmlRenderer.PdfSharp.PdfGenerator.GeneratePdf(html, PdfSharp.PageSize.A4);\n\nappreciated your help on this \n\nthanks",
+    "LastUpdatedDate": "2016-04-27T01:39:20.78-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2016-04-27T01:39:20.78-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Arabic Charecters in PDF Generation from HTML",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17651
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

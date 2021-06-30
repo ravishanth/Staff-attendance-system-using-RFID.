@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-05-22T09:04:03.53-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "www.pdfsharp.net cannot be reached as of 7:50 am Central.",
+    "LastUpdatedDate": "2013-05-16T04:35:27.127-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2011-12-09T05:54:18.103-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "PDFSharp site is down",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 14529
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Interesting. The work computer cannot access it, but the home computer can. No indication that it is a blocked site.",
+      "PostedDate": "2011-12-13T13:13:12.77-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-05-22T09:04:03.53-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:12:06.383-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T04:35:27.127-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

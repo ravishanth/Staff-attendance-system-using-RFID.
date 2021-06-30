@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The MigraDoc.Rendering.ParagraphRenderer.ProbeAfterDecimalAlignedTab method miscalculates alignment for negative numbers used with decimal aligned tab-stops. This happens because the document model produces two text elements for a negative number, and the probe method only accounts for the first one.\nThe first element is for the negation sign, the second is the actual number.\n \nThe probe method should at least check for a number sign element and if the next element is a text element. If this is the case, then the string used for alignment should include the text from both elements. I have included a diff for ParagraphRenderer.cs that appears to fix this issue.",
+    "LastUpdatedDate": "2013-02-21T17:12:05.8-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2012-09-28T07:41:07.06-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Decimal Tab Stops With Negative Numbers",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15654
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4621,
+      "FileName": "ParagraphRenderer.diff",
+      "DownloadUrl": ".\\4621"
+    }
+  ],
+  "Comments": []
+}

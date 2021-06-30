@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed as of PDFsharp 1.50 beta 3.",
+    "ClosedDate": "2015-10-15T05:01:23.1-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Two elements here:\n\nFirst off, the return of datetime.Add(ts) and datetime.Subtract(ts) is never assigned to datetime variable, effectively making the entire operation useless.\n\nSecond, if o == '+', it should SUBTRACT from the date to make it UTC (essentially, the opposite of what is happening here). Once the timespan offset has been applied, DateTime.SetKind should be called to specify that the DateTime is now in UTC format, ensuring that following calls to .ToUniversalTime and .ToLocalTime function properly.",
+    "LastUpdatedDate": "2015-10-15T05:01:23.707-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2012-11-13T12:49:08.367-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "Coding errors in Parser.ParseDateTime",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15780
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4649,
+      "FileName": "13-11-2012 3-45-51 PM.png",
+      "DownloadUrl": ".\\4649"
+    }
+  ],
+  "Comments": []
+}

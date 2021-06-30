@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "An assertion is not an exception.\nFont handling was re-worked with PDFsharp 1.50.",
+    "ClosedDate": "2015-10-15T04:53:24.15-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "PDFSharp 1.32: The following line of code, which worked with 0.9.653, generates an exception. \n\nThe offending line of my code:\n            XFont oFontArialNarrow12Bold = new XFont(\"Arial Narrow\", 12, XFontStyle.Bold);\n\nThe following lines do not generate an exception:\n            XFont oFontArialNarrowItalic10Bold = new XFont(\"Arial Narrow\", 10, XFontStyle.BoldItalic);\n            XFont oFontArialNarrow12 = new XFont(\"Arial Narrow\", 12, XFontStyle.Regular);\n            XFont oFontArial12Bold = new XFont(\"Arial\", 12, XFontStyle.Bold);\n\nException:\nValue differs from information retrieved from the font image.\n\nat XFont.Initialize() ...PdfSharp\\PdfSharp.Drawing\\XFont.cs(215)\n\nCode:\n\n#if DEBUG\n      int desc = Math.Abs(fm.Descent);\n      if (this.cellDescent != desc)\n        Debug.Assert(false, \"Value differs from information retrieved from font image.\");\n#endif",
+    "LastUpdatedDate": "2015-10-15T04:53:24.84-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2012-12-13T08:14:54.237-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Arial Narrow Font",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 15842
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

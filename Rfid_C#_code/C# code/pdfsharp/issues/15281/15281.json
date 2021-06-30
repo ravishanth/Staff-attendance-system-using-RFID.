@@ -1,0 +1,66 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I get some corrupted image streams for black and white images encoded into Group4. I am able to reproduce the problem and have some code that fixes it (though it's more of a hack since I don't understand the true cause).\n \nThis is with PdfSharp 1.32 WPF\n \nThe problem comes from the padding bits in BMPs. I've attached a sample BMP that has the problem. Sometimes the PdfImage.CountOneBits() and PdfImage.CountZeroBits() returns a value greater than the bitsLeft. This is when things go wrong. My hacked solution that I put in both methods is:\n \n        //my new code\n        if (found + hits > bitsLeft)\n            return bitsLeft;\n \n        //existing code\n        if (hits < bits)\n        {",
+    "LastUpdatedDate": "2015-10-27T10:53:32.06-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2012-06-14T13:14:00.347-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Corrupted CCITTGroup4 streams in PDF Export",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 15281
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4412,
+      "FileName": "problemsample-redacted.bmp",
+      "DownloadUrl": ".\\4412"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "By the way. This BMP was altered by hand to cause the problem. In real use the problem is RANDOM. This is because PdfSharp get's a BMP in memory from WPF(WIC) to use as the input to DoFaxEncodingGroup4(). In memory WIC doesn't zero the bytes (evidently) before writing and therefore the padding at the end of each row is random.",
+      "PostedDate": "2012-06-14T13:17:22.447-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I found more problems. Some pages come out garbled. I replaced the group4 encoder with another and that seems to fix it. I'm using the one at: https://ccittcodecs.codeplex.com/",
+      "PostedDate": "2012-06-26T07:38:07.057-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:12:06.183-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-10-27T10:53:32.06-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

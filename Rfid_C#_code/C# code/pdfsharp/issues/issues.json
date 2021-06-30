@@ -1,0 +1,126 @@
+[
+  {
+    "Id": 8465,
+    "Title": "\"Object already in table\" exception when inserting previously-removed page"
+  },
+  {
+    "Id": 8466,
+    "Title": "Cannot handle iref streams"
+  },
+  {
+    "Id": 8829,
+    "Title": "PDFsharp Support Forum: http://forum.pdfsharp.net/"
+  },
+  {
+    "Id": 9057,
+    "Title": "Support for Mono (removing P/Invokes)"
+  },
+  {
+    "Id": 9711,
+    "Title": "InvalidCastException in PdfDictionary.cs"
+  },
+  {
+    "Id": 10155,
+    "Title": "Allow Image streams in MigraDoc"
+  },
+  {
+    "Id": 10783,
+    "Title": "\".GetFamilies is obsolete\" and can't find key file"
+  },
+  {
+    "Id": 14529,
+    "Title": "PDFSharp site is down"
+  },
+  {
+    "Id": 15281,
+    "Title": "Corrupted CCITTGroup4 streams in PDF Export"
+  },
+  {
+    "Id": 15621,
+    "Title": "PDF Files Don't Display After Deployment to Server"
+  },
+  {
+    "Id": 15654,
+    "Title": "Decimal Tab Stops With Negative Numbers"
+  },
+  {
+    "Id": 15658,
+    "Title": "XSolidBrush doesn't update brush color when assigned"
+  },
+  {
+    "Id": 15716,
+    "Title": "Function to add digital signature to PDFs"
+  },
+  {
+    "Id": 15780,
+    "Title": "Coding errors in Parser.ParseDateTime"
+  },
+  {
+    "Id": 15804,
+    "Title": "AddSpace does not reset underline"
+  },
+  {
+    "Id": 15805,
+    "Title": "InvalidCastException in PdfAnnotations"
+  },
+  {
+    "Id": 15842,
+    "Title": "Arial Narrow Font"
+  },
+  {
+    "Id": 15954,
+    "Title": "Symbol font rendering to PDF issue"
+  },
+  {
+    "Id": 16109,
+    "Title": "Hangs while importing a a simple pdf file"
+  },
+  {
+    "Id": 16455,
+    "Title": "online 'split pdf' example uses wrong PdfDocumentOpenMode"
+  },
+  {
+    "Id": 16466,
+    "Title": "RtfFormatter adds an extra space after non-breaking space"
+  },
+  {
+    "Id": 16640,
+    "Title": "Possibility to add image from stream"
+  },
+  {
+    "Id": 16642,
+    "Title": "Table - colum or table width in % or auto-size"
+  },
+  {
+    "Id": 16846,
+    "Title": "CreatedDate/ModDate should allow DateTimeOffset"
+  },
+  {
+    "Id": 17589,
+    "Title": "New version not working with Windows 2012 server"
+  },
+  {
+    "Id": 17614,
+    "Title": "Outlined watermark not work"
+  },
+  {
+    "Id": 17635,
+    "Title": "Apostrophe causes error in Renderer"
+  },
+  {
+    "Id": 17651,
+    "Title": "Arabic Charecters in PDF Generation from HTML"
+  },
+  {
+    "Id": 17663,
+    "Title": "Rotate to landscape (90) then save reverses width and height."
+  },
+  {
+    "Id": 17674,
+    "Title": "TextureBrush support."
+  },
+  {
+    "Id": 17759,
+    "Title": "Blank pages when opening with Adobe reader"
+  }
+]

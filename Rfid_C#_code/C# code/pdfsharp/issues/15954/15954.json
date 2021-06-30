@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Rendering a character to a PDF using a symbol font has an issue if you send 16 bit unicode character with the high bits already set.  It works fine when rendering the same thing to GDI+, but fails for PDFs.  I tracked it down to a couple lines that look like this:\n\n\tglyphID = (int)ch + (descriptor.fontData.os2.usFirstCharIndex & 0xFF00);\n\nIt's adding the first symbol character index to the character to get its index, but if the character already includes the index, it shouldn't be adding it.  It should be performing a bitwise \"or\" | instead of an \"add\" +.  Just a 1 byte patch.  The line should look like this instead:\n\n\tglyphID = (int)ch | (descriptor.fontData.os2.usFirstCharIndex & 0xFF00);\n\nThere are two similar lines which need to be fixed:\nPdfSharp.Drawing.Pdf\\XGraphicsPdfRenderer.cs  line 523\nPdfSharp.Fonts\\CMapInfo.cs  line 71",
+    "LastUpdatedDate": "2016-04-20T00:19:29.573-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2013-01-11T07:12:18.133-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Symbol font rendering to PDF issue",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15954
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Sorry for posting here instead of the official forum, but a firewall is blocking my access to the pdfsharp.net forum.  Hopefully this issue tracker will be checked occasionally.",
+      "PostedDate": "2013-01-11T07:28:06.837-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:12:04.043-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I found another location with the same issue:\r\n\r\nPdfSharp.Fonts.OpenType\\OpenTypeDescriptor.cs line 232",
+      "PostedDate": "2013-09-17T11:29:02.587-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I tried the above fix over an Arabic writting, and it showed disconnected charecters with reversed directions \nappreciated your help",
+      "PostedDate": "2016-04-20T00:19:29.573-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

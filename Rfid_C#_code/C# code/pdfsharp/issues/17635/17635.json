@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2016-09-15T06:28:10.537-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Some variations of apostrophes cause the renderer to issue a 'Raw string contains invalid character' exception.\nThe failing character when cast to an int returns 8217.\nThe normal apostrophe when cast to an int returns 39.\n\ndocument.Info.Subject = subject..Replace(\"’\", \"'\") is a workaround.",
+    "LastUpdatedDate": "2016-09-15T06:28:48.93-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2016-03-25T03:10:28.713-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "Apostrophe causes error in Renderer",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 17635
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Forgot to mention, this is Migradoc v1.50 Beta 3b.",
+      "PostedDate": "2016-03-25T03:11:39.927-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This is the unicode 'Right Single Quote character, and I guess the left single quote has the same issue.\nSee [TEXT](http://www.fileformat.info/info/unicode/char/2019/index.htm)",
+      "PostedDate": "2016-03-25T03:27:03.783-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "With current internal build, Unicode characters can be used here (including apostrophes).\r\n\r\nFor older versions, the hack shown in the forum can be used:\nhttp://forum.pdfsharp.net/viewtopic.php?p=9523#p9523",
+      "PostedDate": "2016-09-15T06:27:52.257-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2016-09-15T06:28:10.537-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2016-09-15T06:28:48.93-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

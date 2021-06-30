@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I downloaded version 1.31 today and tried to compile it in Visual Studio 2008 Professional on Win7 Professional.  The following two errors are thrown by the PdfSharp class library.  My colleague says that his copy compiles with the same version of Visual Studio, but Win XP Professional.\n \nError\t1\tWarning as Error: 'System.Drawing.FontFamily.GetFamilies(System.Drawing.Graphics)' is obsolete: 'Do not use method GetFamilies, use property Families instead'\tC:\\Sandbox\\DotNet3.5\\PDFSharp-MigraDocFoundation-1_31\\PDFsharp\\code\\PdfSharp\\PdfSharp.Drawing\\XFontFamily.cs\t267\t18\tPdfSharp\nError\t2\tAssembly signing failed; output may not be signed -- The system cannot find the file specified. \tPdfSharp",
+    "LastUpdatedDate": "2013-02-21T17:12:06.817-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2010-05-05T12:23:59.9-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "\".GetFamilies is obsolete\" and can't find key file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 10783
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Now that I'm using Windows 7, too, I can replicate that problem.\r\n\r\nThere actually is only 1 warning (\"obsolete\"), but because of the \"treat warnings as errors\" setting, no assembly is created.\r\nIt's not the key file missing, the assembly is missing and therefore cannot be signed.\r\n\r\nSolution: disable \"Treat warnings as errors\" on the Build tab of the project properties.",
+      "PostedDate": "2010-11-24T07:37:57.957-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2011-04-23T06:17:50.81-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I replaced it by the suggested \r\n\r\n'System.Drawing.FontFamily.Families; \r\n\r\nafter which it compiled fine (I did uncheck the Sign Assembly on all build tags to get rid of the key problems).\r\n\r\nwvd_vegt",
+      "PostedDate": "2012-02-22T12:43:15.587-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-03-01T12:44:37.577-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:12:06.817-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

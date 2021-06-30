@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have generated a PDF 28 page document and it works grate, but will not open with the  2015.023.20070 release of Adobe Reader. It displays the first 8 pages then every page is blank.\n\nMy version of PDFSharp is 1.32.",
+    "LastUpdatedDate": "2017-03-28T08:16:44.953-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2017-03-28T08:16:44.953-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Blank pages when opening with Adobe reader",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17759
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

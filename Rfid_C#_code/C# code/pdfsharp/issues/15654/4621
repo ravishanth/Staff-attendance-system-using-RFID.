@@ -1,0 +1,13 @@
+533c533,542
+<         int lastIndex = text.Content.LastIndexOfAny(new char[] { ',', '.' });
+---
+>         if (word == "-" || word == "+" || word == "±")
+>         {
+>             var nextLeaf = this.currentLeaf.GetNextLeaf();
+>             if (IsPlainText(nextLeaf.Current))
+>             {
+>                 this.currentLeaf = nextLeaf;
+>                 word += ((Text)this.currentLeaf.Current).Content;
+>             }
+>         }
+>         int lastIndex = word.LastIndexOfAny(new char[] { ',', '.' });

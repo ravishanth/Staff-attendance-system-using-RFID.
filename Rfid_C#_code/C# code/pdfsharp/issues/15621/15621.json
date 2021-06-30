@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Please visit the PDFsharp Support Forum&#58; http&#58;&#47;&#47;forum.pdfsharp.net&#47;This is the place we check most frequently for questions and bug reports.The PDFsharp web site is at http&#58;&#47;&#47;www.pdfsharp.net&#47;",
+    "ClosedDate": "2012-11-29T07:43:29.367-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have included the MigraDoc.DocumentObjectModel and MigraDoc.Rendering assemblies version 1.32.3885.0 to my VS 2010 web application project.  I have a website where when the user clicks a button it will print out the data from the screen.  The problem I'm having now is that it works on my computer running Visual Studio, but once I deploy it to my development server, the PDF files won't display.  The page just postbacks but the PDFs won't display after the user presses the button.  Is there a security issue that I need to resolve on the server that may have to be replicated onto the production server?  I'm using SQL Server 2008 and IIS 7.  Thanks!",
+    "LastUpdatedDate": "2013-05-16T04:35:26.657-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2012-09-17T09:46:11.823-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "PDF Files Don't Display After Deployment to Server",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15621
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

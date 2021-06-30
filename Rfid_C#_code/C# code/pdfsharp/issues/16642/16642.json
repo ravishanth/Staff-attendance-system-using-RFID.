@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "No issue, just wishes for improvements.",
+    "ClosedDate": "2015-10-15T04:36:00.107-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I created an HTML table to __MigraDoc table__ conversion, i found 2 issues:\n1) no __inner table__ could be added to a cell easily (text-frames are too complex for this)\n2) no auto __flow layout__ is available\n3) __it's not possible to set the column or table width as percentage,__ f.e. Unit(30, UnitType.PageWidthPercentage) or Unit(30, UnitType.PageHeightPercentage)",
+    "LastUpdatedDate": "2015-10-15T04:38:47.287-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2014-01-11T09:07:01.943-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Table - colum or table width in % or auto-size",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 16642
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Re 3: You know the width of a page in cm or in, so it's easy to calculate the column width for any percent value. It's easy to write a helper that does it. I wrote a helper that does something similar and I'll release it sooner or later on NuGet.\nRe 2: MigraDoc could determine the column width automatically based on the contents of each column. But I don't like that idea. The application adds the contents, thus the application can decide better how the available page width will be distributed between columns.\nRe 1: MigraDoc was designed to behave like Word. It was not designed to behave like HTML.\r\n\r\nYou call it \"issues\", I'd call it \"wishes\". I don't 1) or 2) becoming reality any time soon.\r\n\r\n----------------------------------------\nPlease visit the PDFsharp Support Forum:  http://forum.pdfsharp.net/\r\n\r\nThis is the place we check most frequently for questions and bug reports.\r\n\r\nThe PDFsharp web site is at http://www.pdfsharp.net/\n",
+      "PostedDate": "2015-10-15T04:31:50.363-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-10-15T04:36:00.107-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-10-15T04:38:47.287-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

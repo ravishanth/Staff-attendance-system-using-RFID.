@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "(Also reported at http://forum.pdfsharp.net/viewtopic.php?f=3&t=2232)\n\nCalling AddSpace at the start of a FormattedText block results in the white-space inheriting the underline from the previous block.\n\nTo reproduce:\n\nvar para = section.AddParagraph();\nvar block = para.AddFormattedText();\nblock.Font.Underline = Underline.Single;\nblock.Add(new Text(\"This should be underlined\"));\nblock = para.AddFormattedText();\nblock.Font.Underline = Underline.None;\nblock.AddSpace(10);\nblock.Add(new Text(\"<-- These spaces should not\"));\n\n\nThe problem appears to be in the RenderSpace method of the ParagraphRenderer class. I was able to fix the bug by changing this method to:\n\nvoid RenderSpace(Character character)\n{\n   XUnit width = GetSpaceWidth(character);\n   RenderUnderline(width, false);\n   RealizeHyperlink(width);\n   this.currentXPosition += width;\n}",
+    "LastUpdatedDate": "2013-02-21T17:12:05.083-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2012-11-20T08:30:54.19-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "AddSpace does not reset underline",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15804
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4654,
+      "FileName": "pdfsharp-underline-bug.png",
+      "DownloadUrl": ".\\4654"
+    },
+    {
+      "FileId": 4655,
+      "FileName": "PdfSharpAddSpaceBug-NoLib.zip",
+      "DownloadUrl": ".\\4655"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I've attached a simple project to reproduce the problem, using the latest NuGet version of PDFSharp and MigraDoc.",
+      "PostedDate": "2012-11-21T07:29:50.43-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:12:05.083-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

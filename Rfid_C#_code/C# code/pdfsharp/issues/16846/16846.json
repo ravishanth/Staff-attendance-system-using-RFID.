@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Currently there is simply no way to [specify the timezone offset to be used for Created and Modified Dates](http://forum.pdfsharp.net/viewtopic.php?f=2&t=2819). [This value comes directly from the system.](http://stackoverflow.com/a/23789884/5056)\n\nI think the best backwards-compatible solution would be to add a `DateTimeOffset` constructor override to PdfDate. `PdfDocumentInformation.CreationDate` can keep the same public interface but add a `PdfDocumentInformation.CreationDateWithOffset : DateTimeOffset` property that `CreationDate` simply delegates to. Same thing for Modification Date.\n\nIf anyone directs me to instructions on how to build (PdfSharp doesn't seem to build out of the box), run tests (I don't see any?), and submit a patch (sorry, not an svn guy). I would gladly do this myself.",
+    "LastUpdatedDate": "2014-05-21T10:32:20.87-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2014-05-21T10:32:20.87-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "CreatedDate/ModDate should allow DateTimeOffset",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16846
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

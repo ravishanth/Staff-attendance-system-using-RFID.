@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Currently only images from the file-system can be added (no stream support). By supporting streams, any kind of an image could be added, regardless of their location (embedded resource stream, image on the web, e.t.c.)",
+    "LastUpdatedDate": "2015-06-10T08:36:41.873-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2014-01-11T08:46:04.413-08:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Possibility to add image from stream",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16640
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This [Imaging SDK](http://www.rasteredge.com/dotnet-imaging/) supports adding image from both local file or stream and you may have a try.",
+      "PostedDate": "2014-02-10T18:45:59.867-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Sorry, but that's not an option. For 500$ you can get better solutions for PDF/HTML and reporting :D",
+      "PostedDate": "2014-02-10T22:26:29.92-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "You can use \"public static XImage FromGdiPlusImage(Image image)\" (GDI+ build) and \"public static XImage FromBitmapSource(BitmapSource image)\" (WPF build).\r\n\r\nAnd with PDFsharp 1.50 (beta on NuGet) you also get \"public static XImage FromStream(Stream stream)\".\r\n\r\nAnd for PDFsharp 1.32 you can easily add it yourself:\npublic static XImage FromStream(Stream stream)\n{\n    if (stream == null)\n        throw new ArgumentNullException(\"stream\");\r\n\r\n  return new XImage(stream);\n}\n",
+      "PostedDate": "2015-06-10T08:35:04.637-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-06-10T08:36:41.873-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

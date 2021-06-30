@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Check the StringFormat when calling AddText for a path.",
+    "ClosedDate": "2016-09-15T06:35:37.77-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello to all.\n\nIt seems that in 1.50.4000-beta3b version, the XGraphicsPath AddText function with outlined or transparent text not working. I verified in the example code. With 1.32.3057 stable version, it's ok, but not is in 1.50.4000-beta3b.\n\nSee page 2, 3 and 5 and 6 of the attached file.",
+    "LastUpdatedDate": "2016-09-15T06:36:13.817-07:00",
+    "PlannedForRelease": "PDFsharp 1.50 beta 3b",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "pdfsharp",
+    "ReportedDate": "2016-02-23T06:01:10.967-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "Outlined watermark not work",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 17614
+  },
+  "FileAttachments": [
+    {
+      "FileId": 6135,
+      "FileName": "Portable Document Format.pdf",
+      "DownloadUrl": ".\\6135"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Not reproducible.\r\n\r\nPlease note that the Watermark sample was updated for version 1.50 beta 3 or so.",
+      "PostedDate": "2016-09-15T06:33:01.807-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2016-09-15T06:35:37.77-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2016-09-15T06:36:13.817-07:00",
+      "Id": -2147483648
+    }
+  ]
+}
