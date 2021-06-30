@@ -1,0 +1,157 @@
+[
+  {
+    "Id": "0",
+    "Name": "PDFsharp 1.50 beta 4",
+    "DevelopmentStatus": "Beta",
+    "Description": "This is the source code for PDFsharp 1.50 beta 4.\nThe source code for MigraDoc is included.\nThe binaries are available from NuGet.org.\nThe sample source code is available from version 1.50 beta 3b.\n\nPlease note that PDFsharp-MigraDocFoundation-1_50-beta3b.zip includes the source from PDFsharp-1_50-beta3b.zip.\nYou can download PDFsharp-1_50-beta3b.zip to get PDFsharp only, you can download PDFsharp-MigraDocFoundation-1_50-beta3b.zip to get PDFsharp and MigraDoc. But there is no need to download both files.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2017-07-26T09:23:47.297-07:00",
+    "Files": [
+      {
+        "Id": "b56710ba-c72a-4550-b8be-769726ffe719",
+        "FileName": "PDFsharp-MigraDocFoundation-1_50-beta4.zip",
+        "Url": "./0/b56710ba-c72a-4550-b8be-769726ffe719",
+        "Type": "Source Code",
+        "UploadDate": "2017-07-26T09:23:40.637-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "PDFsharp 1.50 beta 3b",
+    "DevelopmentStatus": "Beta",
+    "Description": "This is the source code for PDFsharp 1.50 beta 3b.\nThe source code for MigraDoc and the samples is included.\nThe binaries are available from NuGet.org.\n\nPlease note that {\"PDFsharp-MigraDocFoundation-1_50-beta3b.zip\"} includes the source from {\"PDFsharp-1_50-beta3b.zip\"}.\nYou can download {\"PDFsharp-1_50-beta3b.zip\"} to get PDFsharp only, you can download {\"PDFsharp-MigraDocFoundation-1_50-beta3b.zip\"} to get PDFsharp and MigraDoc. But there is no need to download both files.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2015-12-16T01:47:25.09-08:00",
+    "Files": [
+      {
+        "Id": "0a894352-7cd3-4eae-a521-06a3bf2b4e30",
+        "FileName": "PDFsharp-MigraDocFoundation-1_50-beta3b.zip",
+        "Url": "./1/0a894352-7cd3-4eae-a521-06a3bf2b4e30",
+        "Type": "Source Code",
+        "UploadDate": "2015-12-16T01:47:19.973-08:00"
+      },
+      {
+        "Id": "c59a8cce-6412-4c4a-a788-6f1a6de9c637",
+        "FileName": "PDFsharp-1_50-beta3b.zip",
+        "Url": "./1/c59a8cce-6412-4c4a-a788-6f1a6de9c637",
+        "Type": "Source Code",
+        "UploadDate": "2015-12-16T01:47:20.13-08:00"
+      },
+      {
+        "Id": "c5139731-17a0-48bb-8a4d-82459ef6473c",
+        "FileName": "PDFsharp-Samples.zip",
+        "Url": "./1/c5139731-17a0-48bb-8a4d-82459ef6473c",
+        "Type": "Source Code",
+        "UploadDate": "2015-12-16T01:47:20.27-08:00"
+      },
+      {
+        "Id": "2b30600a-2618-4dd6-ba6b-049ac3d4509c",
+        "FileName": "MigraDoc-Samples.zip",
+        "Url": "./1/2b30600a-2618-4dd6-ba6b-049ac3d4509c",
+        "Type": "Source Code",
+        "UploadDate": "2015-12-16T01:47:20.35-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "PDFsharp and MigraDoc Foundation 1.30",
+    "DevelopmentStatus": "Stable",
+    "Description": "PDFsharp and MigraDoc Foundation 1.30 is a stable version that fixes many bugs that were found with version 1.20.\n\n!! Available Files\n* PDFSharp-MigraDocFoundation-1_30.zip: the complete source code (recommended if you're using Visual Studio 2008 or 2005)\n* PDFsharp-MigraDocFoundation-Assemblies-1_30.zip: the compiled assemblies (for those who don't use Visual Studio 2008 or 2005)\n* PDFsharp-Help-VSIPCC-1_30.zip: help files that integrate with the Visual Studio documentation (recommended if you're using Visual Studio 2008 or 2005)\n* PDFsharp-Help-Standalone-1_30.zip: stand-alone help file (for those who don't use Visual Studio 2008 or 2005)\n\n!! What do you need?\nDownload the binaries if you don't care about the source code.\nIf you download the source code, you can create your own binaries with VS 2005 or 2008.\nYou don't need the standalone help if you're working with Visual Studio 2008 or 2005.\nYou don't need the integrated help if you don't have Visual Studio.\n\n!! Further Information\n* Homepage: [http://www.pdfsharp.net/]\n* Wiki [http://www.pdfsharp.net/wiki/]\n",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-08-12T05:38:47.97-07:00",
+    "Files": [
+      {
+        "Id": "99b70325-2d55-4f36-b71c-7ccee7fe16fd",
+        "FileName": "PDFSharp-MigraDocFoundation-1_30.zip",
+        "Url": "./2/99b70325-2d55-4f36-b71c-7ccee7fe16fd",
+        "Type": "Source Code",
+        "UploadDate": "2009-08-12T05:38:46.39-07:00"
+      },
+      {
+        "Id": "30d888af-bcf6-4084-bdab-ef26109b0d80",
+        "FileName": "PDFsharp-MigraDocFoundation-Assemblies-1_30.zip",
+        "Url": "./2/30d888af-bcf6-4084-bdab-ef26109b0d80",
+        "Type": "Application",
+        "UploadDate": "2009-08-12T05:38:46.843-07:00"
+      },
+      {
+        "Id": "8dcae8fb-51cb-4d5c-be7d-edb9c157b4e4",
+        "FileName": "PDFsharp-Help-VSIPCC-1_30.zip",
+        "Url": "./2/8dcae8fb-51cb-4d5c-be7d-edb9c157b4e4",
+        "Type": "Documentation",
+        "UploadDate": "2009-08-12T05:38:46.937-07:00"
+      },
+      {
+        "Id": "cd18aabd-73a8-49a9-ade4-5e70bb8452a6",
+        "FileName": "PDFsharp-Help-Standalone-1_30.zip",
+        "Url": "./2/cd18aabd-73a8-49a9-ade4-5e70bb8452a6",
+        "Type": "Documentation",
+        "UploadDate": "2009-08-12T05:38:47.453-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "PDFsharp and MigraDoc Foundation 1.32",
+    "DevelopmentStatus": "Stable",
+    "Description": "PDFsharp and MigraDoc Foundation 1.32 is a stable version that fixes a few bugs that were found with version 1.31.\nVersion 1.32 includes solutions for Visual Studio 2010 only (but it should be possible to add the project files to existing solutions for VS 2005 or VS 2008).\nUsers of VS 2005 or VS 2008 can still download version 1.31 with the solutions for those versions that allow them to easily try the samples that are included.\n\nWhile it may create smaller PDF files than version 1.30 because of these image optimizations, it may also be slower for certain images types.\nIf you favor speed: stay with PDFsharp 1.30.\nIf you favor small PDF files: use PDFsharp 1.31 or 1.32.\nFuture versions of PDFsharp will support both modes (favour speed and favour size).\n\n!! Available Files\n* PDFSharp-MigraDocFoundation-1_32.zip: the complete source code (recommended if you're using Visual Studio 2010)\n* PDFsharp-MigraDocFoundation-Assemblies-1_32.zip: the compiled assemblies (for those who don't use Visual Studio 2010)\n\n!! What do you need?\nDownload the binaries if you don't care about the source code.\nIf you download the source code, you can create your own binaries with VS 2010 (solutions included) or VS 2008/2005 (solutions not included, but projects should work).\n\n!! Further Information\n* Homepage: [http://www.pdfsharp.net/]\n* Wiki [http://www.pdfsharp.net/wiki/]",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-08-15T05:03:28.01-07:00",
+    "Files": [
+      {
+        "Id": "9470984a-7e56-48bc-a409-68cbc237f8d5",
+        "FileName": "PDFSharp-MigraDocFoundation-1_32.zip",
+        "Url": "./3/9470984a-7e56-48bc-a409-68cbc237f8d5",
+        "Type": "Source Code",
+        "UploadDate": "2012-03-07T00:50:35.383-08:00"
+      },
+      {
+        "Id": "9f051f34-423c-4516-a381-fa4bf91cf43e",
+        "FileName": "PDFsharp-MigraDocFoundation-Assemblies-1_32.zip",
+        "Url": "./3/9f051f34-423c-4516-a381-fa4bf91cf43e",
+        "Type": "Application",
+        "UploadDate": "2012-03-07T00:50:35.713-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "Name": "PDFsharp and MigraDoc Foundation 1.31",
+    "DevelopmentStatus": "Stable",
+    "Description": "PDFsharp and MigraDoc Foundation 1.31 is a stable version that fixes a few bugs that were found with version 1.30.\nImage compression was improved (CCITT format was added).\nWhile it may create smaller PDF files than version 1.30 because of these image optimizations, it may also be slower for certain images types.\nIf you favor speed: stay with PDFsharp 1.30.\nIf you favor small PDF files: use PDFsharp 1.31.\nFuture versions of PDFsharp will support both modes (favour speed and favour size).\n\n!! Available Files\n* PDFSharp-MigraDocFoundation-1_31.zip: the complete source code (recommended if you're using Visual Studio 2008 or 2005)\n* PDFsharp-MigraDocFoundation-Assemblies-1_31.zip: the compiled assemblies (for those who don't use Visual Studio 2008 or 2005)\n* PDFsharp-Help-VSIPCC-1_31.zip: help files that integrate with the Visual Studio documentation (recommended if you're using Visual Studio 2008 or 2005)\n* PDFsharp-Help-Standalone-1_31.zip: stand-alone help file (for those who don't use Visual Studio 2008 or 2005)\n\n!! What do you need?\nDownload the binaries if you don't care about the source code.\nIf you download the source code, you can create your own binaries with VS 2005 or 2008.\nYou don't need the standalone help if you're working with Visual Studio 2008 or 2005.\nYou don't need the integrated help if you don't have Visual Studio.\n\n!! Further Information\n* Homepage: [http://www.pdfsharp.net/]\n* Wiki [http://www.pdfsharp.net/wiki/]",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-12-09T07:47:34.397-08:00",
+    "Files": [
+      {
+        "Id": "7afe741f-d12c-4479-a233-a2e31ab04759",
+        "FileName": "PDFSharp-MigraDocFoundation-1_31.zip",
+        "Url": "./4/7afe741f-d12c-4479-a233-a2e31ab04759",
+        "Type": "Source Code",
+        "UploadDate": "2009-12-09T07:45:43.913-08:00"
+      },
+      {
+        "Id": "734a14e7-026a-4074-bbd0-55d354a98ba8",
+        "FileName": "PDFsharp-MigraDocFoundation-Assemblies-1_31.zip",
+        "Url": "./4/734a14e7-026a-4074-bbd0-55d354a98ba8",
+        "Type": "Application",
+        "UploadDate": "2009-12-09T07:45:44.46-08:00"
+      },
+      {
+        "Id": "95f86c33-a4ff-487f-9c23-4e91b4dc6740",
+        "FileName": "PDFsharp-Help-VSIPCC-1_31.zip",
+        "Url": "./4/95f86c33-a4ff-487f-9c23-4e91b4dc6740",
+        "Type": "Documentation",
+        "UploadDate": "2009-12-09T07:45:44.553-08:00"
+      },
+      {
+        "Id": "621ee9c8-d2a4-47aa-a835-f01cd5e1f215",
+        "FileName": "PDFsharp-Help-Standalone-1_31.zip",
+        "Url": "./4/621ee9c8-d2a4-47aa-a835-f01cd5e1f215",
+        "Type": "Documentation",
+        "UploadDate": "2009-12-09T07:45:44.88-08:00"
+      }
+    ]
+  }
+]
