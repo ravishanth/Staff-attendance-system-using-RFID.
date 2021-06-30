@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "892971",
+    "ThreadId": "389538",
+    "Html": "\r\n<p>Hi All,</p>\r\n<p>I saw in forum that we have separate control called PdfAcroViewer control in PDfSharp which can be used to render the pdf document in C# Windows forms.</p>\r\n<p>I couldn't able find the control, so could you please give/redirect me the example where can i use the control in windows forms.</p>\r\n<p>Thanks and Regards,</p>\r\n<p>Sathish</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-07-30T04:28:05.327-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1429926",
+    "ThreadId": "389538",
+    "Html": "I don't know where you read that.\r<br />\n<br />\n<br />\nVery high in the FAQ list it says: \r<br />\n<br />\n<em>Can PDFsharp show PDF files? Print PDF files? Create images from PDF files?</em> \r<br />\n PDFsharp comes with a preview control designed to visualize drawing operations of the XGraphics object, but it <strong>cannot render PDF files</strong>. \r<br />\n<br />\n Further the DrawImage function can be used to draw so called form XObjects in PDF pages. If you try to render such an object in the preview, only the bounding box is drawn to show that it cannot be rendered. \r<br />\n<br />\n The PDFsharp Samples show how to invoke Adobe Reader or Acrobat to view or print PDF files and how to invoke GhostScript to create images from PDF pages. \r<br />\n<br />\n See FAQ: \r<br />\n<a href=\"http://www.pdfsharp.net/wiki/PDFsharpFAQ.ashx\" rel=\"nofollow\">http://www.pdfsharp.net/wiki/PDFsharpFAQ.ashx</a><br />\n",
+    "PostedDate": "2015-06-10T08:19:26.073-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

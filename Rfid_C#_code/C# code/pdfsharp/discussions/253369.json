@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "595163",
+    "ThreadId": "253369",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>is this possible to convert pdf's whole pages to an images?</p>\r\n<p>&nbsp;</p>\r\n<p>Regards</p>\r\n",
+    "PostedDate": "2011-04-11T01:38:06.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1429923",
+    "ThreadId": "253369",
+    "Html": "Very high in the FAQ list it says: \r<br />\n<br />\n<em>Can PDFsharp show PDF files? Print PDF files? Create images from PDF files?</em>\r<br />\nPDFsharp comes with a preview control designed to visualize drawing operations of the XGraphics object, but it <strong>cannot render PDF files</strong>.\r<br />\n<br />\nFurther the DrawImage function can be used to draw so called form XObjects in PDF pages. If you try to render such an object in the preview, only the bounding box is drawn to show that it cannot be rendered.\r<br />\n<br />\nThe PDFsharp Samples show how to invoke Adobe Reader or Acrobat to view or print PDF files and how to invoke GhostScript to create images from PDF pages.\r<br />\n<br />\nSee FAQ:\r<br />\n<a href=\"http://www.pdfsharp.net/wiki/PDFsharpFAQ.ashx\" rel=\"nofollow\">http://www.pdfsharp.net/wiki/PDFsharpFAQ.ashx</a><br />\n",
+    "PostedDate": "2015-06-10T08:17:25.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2015-06-10T08:17:30.467-07:00"
+  }
+]

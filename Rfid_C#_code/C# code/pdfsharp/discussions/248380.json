@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "575287",
+    "ThreadId": "248380",
+    "Html": "\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string strTifFileName = @&quot;c:\\PDFSharp\\PDFsharp\\samples\\Samples C#\\Based on GDI&#43;2010\\sampleCheckImage.tif&quot;;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; formGfx.DrawImage(XImage.FromFile(strTifFileName), x_from_left, y_from_top);</p>\r\n<p>What if my tif file contains two separate images, one front of check and second one is back of check.\r\n<br>\r\nI'm able to create a PDF, but I'm only getting the first image.&nbsp; Is is possible to get both images?&nbsp; Or am I going to have to go another route?</p>\r\n<p>Thanks,<br>\r\nNeal <br>\r\n<br>\r\n</p>\r\n",
+    "PostedDate": "2011-03-03T14:22:06.337-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1228148",
+    "ThreadId": "248380",
+    "Html": "May be this help someone !!!<br />\n<ul>\n<li>Concept is based on FrameDimension.Page. </li>\n<li>\nFound example at <a href=\"http://www.codenutz.com/creating-a-multi-page-pdf-from-a-tiff-tiff-to-pdf-converter/\" rel=\"nofollow\">http://www.codenutz.com/creating-a-multi-page-pdf-from-a-tiff-tiff-to-pdf-converter/</a><br />\n</li>\n</ul>\n<pre><code>//THIS IS PARTIAL CODE.\nXGraphics xgr; \nSystem.Drawing.Image image = System.Drawing.Image.FromFile(strTifFileName);\nint count = image.GetFrameCount(FrameDimension.Page);\nfor (int pageNum = 0; pageNum &amp;lt; count; pageNum++)\n {  \n     image.SelectActiveFrame(FrameDimension.Page, pageNum); \n     PdfPage page = new PdfPage(); \n     doc.Pages.Add(page); \n     xgr = XGraphics.FromPdfPage(page);\n    XImage ximg = XImage.FromGdiPlusImage(image);\n    xgr.DrawImage(ximg, 0, 0); \n } </code></pre>\n\n",
+    "PostedDate": "2014-03-29T05:30:20.817-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2015-06-10T08:14:59.96-07:00"
+  }
+]

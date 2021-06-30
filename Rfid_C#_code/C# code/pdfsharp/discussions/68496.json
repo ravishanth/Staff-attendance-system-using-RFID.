@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "232987",
+    "ThreadId": "68496",
+    "Html": "<p>Hi,</p>\r\n<p>Can we create Microsoft Infopath 2007 forms to pdf/doc using this API?</p>\r\n<p>Please give some suggestions on this topic?</p>\r\n<p>Thank You.</p>",
+    "PostedDate": "2009-09-10T00:59:30.693-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "605805",
+    "ThreadId": "68496",
+    "Html": "<p>hello, I'm coding in this way.</p>\r\n<p>I convert Infopath in Html in first, and I convert the generated Html into PDF.</p>",
+    "PostedDate": "2011-05-02T05:16:07.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

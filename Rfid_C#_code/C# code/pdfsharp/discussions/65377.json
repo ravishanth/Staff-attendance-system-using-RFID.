@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "222636",
+    "ThreadId": "65377",
+    "Html": "<p>For anybody who wants to hack on PDFsharp using git, I've git-svn clone'd the CodePlex subversion repository and published it on gitorious.org, where you can check it and/or publish your own branches:</p>\r\n<p><a href=\"http://gitorious.org/pdfsharp\">http://gitorious.org/pdfsharp</a></p>\r\n<p>&nbsp;</p>\r\n<p>Obviously the CodePlex subversion repo is the canonical copy.&nbsp; I will try to keep the gitorious copy up to date with it, and it will never contain changes that aren't upstream (though individuals' branches/clones may, of course).</p>",
+    "PostedDate": "2009-08-12T10:55:44.63-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

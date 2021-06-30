@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "596149",
+    "ThreadId": "253616",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>Will your library allow me to add javascript to print the PDF as soon as it is opened? I can do this with another PDF lib, but I would have to buy their license which isn't very worthwhille (this is the only requirement I have).</p>\r\n<p>Thanks, Bill</p>\r\n",
+    "PostedDate": "2011-04-12T13:01:14.193-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "600501",
+    "ThreadId": "253616",
+    "Html": "<p>I figured it out. Here is the code:</p>\r\n<p>// Read document into memory for modification<br />using (PdfDocument document = PdfReader.Open(sourcePath))<br />{<br />&nbsp; &nbsp; &nbsp;&nbsp; // First we have to create a new dictionary that defines the action.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;PdfDictionary dict = new PdfDictionary(document);</p>\r\n<pre style=\"font-family: Consolas; background: white; color: black; font-size: 13px;\"><p>  &nbsp;// According to the PDF Reference the dictionary requires two elements.<br />   // A key /S that specifies the action name, and a key /JS that set the JavaScript to run.</p><p>  &nbsp;dict.Elements[\"/S\"] = new PdfName(\"/JavaScript\");<br />  &nbsp;dict.Elements[\"/JS\"] = new PdfName(\"/this.print(true);\");</p><p>&nbsp;  </p><p>  &nbsp;// Now that the action dictionary is complete, we can add it to the<br />  &nbsp;// document's object table.<br />  &nbsp;// Adding an object to the object table makes it an indirect object.<br />  &nbsp;document.Internals.AddObject(dict);</p><p>&nbsp;</p><p>  &nbsp;// Finally we must add the action dictionary to the /OpenAction key of<br />  &nbsp;// the document's catalog as an indirect value.<br />  &nbsp;document.Internals.Catalog.Elements[\"/OpenAction\"] = PdfInternals.GetReference(dict);</p><p>&nbsp; </p><p>   // Save modified pdf.<br />&nbsp;  document.Save(destPath);<br />}</p></pre>",
+    "PostedDate": "2011-04-20T09:38:08.817-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "982457",
+    "ThreadId": "253616",
+    "Html": "\r\n<p>works perfect. Thanks <a href=\"http://www.codeplex.com/site/users/view/wdavidsen\">\r\nwdavidsen</a></p>\r\n",
+    "PostedDate": "2013-01-02T14:14:37.523-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1304198",
+    "ThreadId": "253616",
+    "Html": "Thank you -- works great.  I did run into a funny thing though -- in VS 2013, you get a weird error inside a dynamic Javascript file named &quot;BrowserLink&quot; unless you disable the &quot;Browser Link&quot; option.<br />\n",
+    "PostedDate": "2014-09-12T12:23:12.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

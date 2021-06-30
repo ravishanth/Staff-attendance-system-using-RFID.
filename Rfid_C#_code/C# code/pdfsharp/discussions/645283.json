@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1445228",
+    "ThreadId": "645283",
+    "Html": "I see two files which seem to be installers for the integrated help. Which should I use, or are they tailored for specific cases?\r<br />\n<br />\nPDFsharp and MigraDoc Documentation.msi\r<br />\nsetup.exe\r<br />\n<br />\nI haven't gotten started learning the API, but thank you for making a PDF library. =D<br />\n",
+    "PostedDate": "2015-09-21T11:48:03.033-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1445233",
+    "ThreadId": "645283",
+    "Html": "I went ahead and used the .msi, but I'm still curious why they both exist...<br />\n",
+    "PostedDate": "2015-09-21T12:44:10.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

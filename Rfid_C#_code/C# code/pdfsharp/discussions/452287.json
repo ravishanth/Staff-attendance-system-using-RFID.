@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1076220",
+    "ThreadId": "452287",
+    "Html": "The PdfSharp.Xps project is there in version 1.31, but not in 1.32. Why?\r<br />\nIt could be a great help in some scenarios.<br />\n",
+    "PostedDate": "2013-08-02T20:41:07.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1429927",
+    "ThreadId": "452287",
+    "Html": "You can still use the XPS source from 1.31 with 1.32.<br />\n",
+    "PostedDate": "2015-06-10T08:21:38.987-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

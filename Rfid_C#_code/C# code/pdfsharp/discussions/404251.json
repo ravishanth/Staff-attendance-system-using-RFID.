@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "945715",
+    "ThreadId": "404251",
+    "Html": "\r\n<p>i have a&nbsp; large collection of ebooks , which i use as a reference ..many on the same subject too ...so its hard to manage or search for specific terms without viewing many ebooks ..so i want to write an application which reads from all the books of\r\n under the chosen category and display me the results ..also ive another idea of creating a knowledge database like</p>\r\n<p>&nbsp;</p>\r\n<p>ebook -&gt; my app -&gt; extract -&gt; write in database -&gt; query database for information ...</p>\r\n<p>basically looking for a pdf parser</p>\r\n",
+    "PostedDate": "2012-11-22T08:01:14.293-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1265420",
+    "ThreadId": "404251",
+    "Html": "Use solr from apache\r<br />\nor Lucene.net <br />\n",
+    "PostedDate": "2014-07-14T01:40:09.49-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

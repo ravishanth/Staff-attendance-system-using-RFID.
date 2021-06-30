@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "1248060",
+    "ThreadId": "546143",
+    "Html": "Since pdfsharp isn't on github/bitbucket we don't have the concept of pull requests. How do we do this?<br />\n",
+    "PostedDate": "2014-05-21T10:06:42.743-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1263690",
+    "ThreadId": "546143",
+    "Html": "Take the source and put it on Github. The project looks dead anyway but with the MIT license you are free to do that.\r<br />\nDon't forget to post the link so we can find it.<br />\n",
+    "PostedDate": "2014-07-08T08:28:03.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1263691",
+    "ThreadId": "546143",
+    "Html": "<span id=\"mailbox-conversation\">Yeah. Taking on maintainance of this beast - especially in a fork without official sanction is not really something I'm gung-ho for</span>\r\n<div>—<br>\r\nSent from <a href=\"https://www.dropbox.com/mailbox\">Mailbox</a> </div>\r\n<br>\r\n<br>\r\n<div>\r\n<p></p>\r\n</div>\r\n",
+    "PostedDate": "2014-07-08T08:30:58.733-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1274487",
+    "ThreadId": "546143",
+    "Html": "It seems someone has already put the code (without improvements) on Github already so you can fork it from him: <a href=\"https://github.com/DnevnikRu/PDFSharp\" rel=\"nofollow\">https://github.com/DnevnikRu/PDFSharp</a><br />\n",
+    "PostedDate": "2014-07-20T05:56:32.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1274521",
+    "ThreadId": "546143",
+    "Html": "\r\n<div dir=\"ltr\">Yeah but that would effectively be creating a fork, wouldn't it? No guarantee, or even a pathway for making your changes land upstream. Then you quickly end up in the same nonsense as we currently have with EFHooks.</div>\r\n<div><br>\r\n<br>\r\n<div></div>\r\n</div>\r\n",
+    "PostedDate": "2014-07-20T09:33:27.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1339182",
+    "ThreadId": "546143",
+    "Html": "The active source (and the project is active as of this post) is on SourceForge.  Looks like they abandoned Codeplex in 2012...  If you want to submit a patch, looks like you need to go there...<br />\n",
+    "PostedDate": "2015-01-05T10:57:28.15-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1339210",
+    "ThreadId": "546143",
+    "Html": "My bad.  The project looks dead because the development model is Cathedral (between releases closed to only a select set of developers) instead of a Bazaar.  Looks like if you want to submit a patch, you submit a bug report, presumably with your patch as bug report support documentation.  <br />\n",
+    "PostedDate": "2015-01-05T12:43:47.183-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1429920",
+    "ThreadId": "546143",
+    "Html": "The project is not dead.\r<br />\n<br />\nPlease use the PDFsharp forum for discussions, feedback, and to submit patches.\r<br />\n<br />\nPlease visit the PDFsharp Support Forum:  <a href=\"http://forum.pdfsharp.net/\" rel=\"nofollow\">http://forum.pdfsharp.net/</a>\r<br />\n<br />\nThis is the place we check most frequently for questions and bug reports.\r<br />\n<br />\nThe PDFsharp web site is at <a href=\"http://www.pdfsharp.net/\" rel=\"nofollow\">http://www.pdfsharp.net/</a><br />\n",
+    "PostedDate": "2015-06-10T08:05:49.663-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2015-06-10T08:06:04.217-07:00"
+  }
+]

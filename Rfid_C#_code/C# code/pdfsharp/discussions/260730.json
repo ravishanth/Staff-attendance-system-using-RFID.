@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "625211",
+    "ThreadId": "260730",
+    "Html": "\r\n<p>i want to add images to my document without saving it in a file</p>\r\n<p>is there any way to add a image object to document ?</p>\r\n",
+    "PostedDate": "2011-06-09T01:42:20.17-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "625298",
+    "ThreadId": "260730",
+    "Html": "This works for PDFsharp, but not for MigraDoc that comes with PDFsharp.<br />\n<br />\nWith PDFsharp, use &quot;XImage.FromBitmapSource&quot; (WPF build) or &quot;XImage.FromGdiPlusImage&quot; (GDI+ build).<br />\n<br />\nYou can modify MigraDoc to get this for MigraDoc, too.<br />\nSee here: <a href=\"http://forum.pdfsharp.net/viewtopic.php?p=4123#p4123\" rel=\"nofollow\">http://forum.pdfsharp.net/viewtopic.php?p=4123#p4123</a><br />\n",
+    "PostedDate": "2011-06-09T05:09:32.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2015-06-10T08:12:37.123-07:00"
+  }
+]

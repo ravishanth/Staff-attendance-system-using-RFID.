@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "531529",
+    "ThreadId": "237233",
+    "Html": "\r\n<p>Hi PDFsharp Team,</p>\r\n<p>I am just wondering where are you about to support Adobe 6.x format with&nbsp;iref streams?</p>\r\n<p>Thank you!</p>\r\n",
+    "PostedDate": "2010-12-05T20:39:11.813-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1429929",
+    "ThreadId": "237233",
+    "Html": "It's coming with version 1.50. A beta version is available on NuGet.\r<br />\nIt's coming late - but better late than never.<br />\n",
+    "PostedDate": "2015-06-10T08:26:46.937-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1484386",
+    "ThreadId": "237233",
+    "Html": "Hello,<br />\n<br />\nThank you for this fixe.<br />\n<br />\nWe are using the stable nuget package version '<strong>1.32.3057</strong>'<br />\nToday, The latest package version '<strong>1.50.4000-beta3b</strong>' from 15/12/2015. <br />\n<br />\nWe can't update to a <strong>beta</strong> version on our production environnement,<br />\n<br />\nWhen you can you deploy a <strong>stable</strong> package on nuget ?<br />\n<br />\nBest regards<br />\nJd<br />\n",
+    "PostedDate": "2016-09-22T00:56:16.043-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

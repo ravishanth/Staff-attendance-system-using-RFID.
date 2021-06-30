@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "222622",
+    "ThreadId": "65374",
+    "Html": "<p>What is the preferred way to submit patches?&nbsp; Attach them to a new issue in the issue tracker?</p>",
+    "PostedDate": "2009-08-12T10:33:35.977-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1429928",
+    "ThreadId": "65374",
+    "Html": "Please use the PDFsharp forum for discussions, feedback, and to submit patches. \r<br />\n<br />\n Please visit the PDFsharp Support Forum:  <a href=\"http://forum.pdfsharp.net/\" rel=\"nofollow\">http://forum.pdfsharp.net/</a> \r<br />\n This is the place we check most frequently for questions and bug reports. \r<br />\n<br />\n The PDFsharp web site is at <a href=\"http://www.pdfsharp.net/\" rel=\"nofollow\">http://www.pdfsharp.net/</a><br />\n",
+    "PostedDate": "2015-06-10T08:24:42.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
